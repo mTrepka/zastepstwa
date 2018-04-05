@@ -1,0 +1,14 @@
+.background{
+-fx-background-image:url("back.jpg");
+-fx-background-attachment: fixed;
+}
+.left-box{
+-fx-background:red;
+}
+.right-box{
+
+}
+.list{
+-fx-background-insets: 0;
+  -fx-padding: 0;
+}

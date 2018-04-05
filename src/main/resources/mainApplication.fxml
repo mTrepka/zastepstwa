@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" styleClass="background" stylesheets="@mainApplication.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainApplicationController">
+   <children>
+      <VBox fx:id="vboxLeft" prefHeight="300.0" prefWidth="120.0" styleClass="left-box" stylesheets="@mainApplication.css">
+         <children>
+            <ListView fx:id="arrayList" blendMode="MULTIPLY" onMousePressed="#mouseClick" prefHeight="208.0" prefWidth="100.0" styleClass="list" stylesheets="@mainApplication.css">
+               <VBox.margin>
+                  <Insets bottom="35.0" left="20.0" top="50.0" />
+               </VBox.margin>
+            </ListView>
+         </children></VBox>
+      <VBox fx:id="vboxRight" styleClass="right-box" stylesheets="@mainApplication.css">
+         <children>
+            <WebView fx:id="table" blendMode="MULTIPLY" prefHeight="451.0" prefWidth="600.0" stylesheets="@mainApplication.css">
+               <VBox.margin>
+                  <Insets right="20.0" top="24.0" />
+               </VBox.margin>
+            </WebView>
+            <Label text="by Mariusz Trepka" textFill="#d09b9b" />
+         </children></VBox>
+   </children>
+</HBox>
